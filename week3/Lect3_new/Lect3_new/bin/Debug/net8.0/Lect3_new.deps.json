@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Lect3_new/1.0.0": {
+        "runtime": {
+          "Lect3_new.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lect3_new/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
