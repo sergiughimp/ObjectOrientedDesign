@@ -50,3 +50,24 @@ This lab focuses on abstract classes and inheritance in C#. It demonstrates how 
 **Outcome:**  
 This task illustrates the use of abstract classes, inheritance, method overriding, and polymorphism in C#. It provides hands-on practice for designing reusable and extendable object-oriented code, showing how different shapes can share a common interface while implementing their own area calculations.
 
+
+# Lecture 3: Functions, Methods, and Modular Programming in C#
+
+In this lecture, I explored **how to structure a C# program using functions, methods, and modular design**. The goal was to move away from a single, crowded file and separate functionality into clear, reusable components.
+
+
+Project Overview
+
+I created a **main program** (`Program.cs`) that brings together several modules:  
+
+- **Person** – Represents a person with `Name` and `Age`, and can print details.  
+- **Counter** – A simple static counter that can be incremented and read.  
+- **Calculator** – Performs basic arithmetic like addition.  
+- **MathHelper** – Provides reusable math operations: square, power, addition, multiplication.
+
+Each module lives in its **own namespace**, making the code easier to read, maintain, and extend. The main program interacts with all these modules, taking input, performing calculations, and displaying results.
+
+## Summary
+
+This project demonstrates **modular programming in C#**, separating logic into distinct files and namespaces. It highlights how to create reusable functions and methods, work with console input/output, and design a clean, maintainable program structure.
+
