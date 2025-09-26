@@ -6,14 +6,10 @@ namespace task1Library
 
         // Use List<string> to store book titlesImplement these basic operations
         List<string> books = new List<string>();
-        public void AddBooks()
+        public void AddBooks(string title)
         {
-            // Add 5 book titles to the list
-            books.Add("The Alchemist");
-            books.Add("Think and Grow Rich");
-            books.Add("Rich Dad, Poor Dad");
-            books.Add("How to Win Friends & Influence People");
-            books.Add("Emotional Intelligence");
+            // Add a book to the list
+            books.Add(title)
         }
         public void DisplayBooks() {
             // Display all books with their position numbers (1, 2, 3...)
