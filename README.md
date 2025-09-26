@@ -71,3 +71,40 @@ Each module lives in its **own namespace**, making the code easier to read, main
 
 This project demonstrates **modular programming in C#**, separating logic into distinct files and namespaces. It highlights how to create reusable functions and methods, work with console input/output, and design a clean, maintainable program structure.
 
+
+# Lab 3: Classes and Objects in C#
+
+This lab focuses on **working with generic collections** and **defining classes with properties and methods** in C#. It demonstrates how to organize code into multiple namespaces for clarity and modularity.
+
+## Project Overview
+
+The project consists of two main parts:
+
+### Task 1: Library Management System
+- **Objective:** Manage a collection of book titles using `List<string>`.
+- **Operations Implemented:**
+  - Add a book by title to the list.
+  - Display all books with their position numbers.
+  - Remove a book by title.
+  - Check if a specific book exists in the collection.
+  - Show the total number of books.
+- **Implementation:** All functionality is encapsulated in the `Library` class within the `task1Library` namespace. The `Main` method interacts with this class to demonstrate its features.
+
+### Task 2: Student Class
+- **Objective:** Create a `Student` class with private fields and public properties.
+- **Fields and Properties:** `name` (string), `age` (int), `studentId` (string) with basic get/set validation.
+- **Constructor:** Uses the `this` keyword to initialize all fields.
+- **Method:** `DisplayInfo()` prints the student details.
+- **Implementation:** Two `Student` objects are created in `Main()` and their information is displayed. The class is defined in the `task2Student` namespace.
+
+
+## Project Structure
+
+- `Program.cs` – Main program file that calls both the Library and Student classes.
+- `task1Library` namespace – Contains the `Library` class.
+- `task2Student` namespace – Contains the `Student` class.
+
+## Summary
+
+This lab demonstrates **object-oriented design** in C# by creating classes with properties, constructors, and methods, while also showing how to use **generic collections** (`List<T>`). The project is structured to separate functionality into **different namespaces**, making the code more readable, modular, and maintainable.
+
