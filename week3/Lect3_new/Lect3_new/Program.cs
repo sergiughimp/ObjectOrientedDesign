@@ -19,26 +19,26 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Person person1 = new Person("Alice", 25);
-        // Console.WriteLine("Print the detalis of the person by accessing each variable: ");
-        // Console.WriteLine("Name: " + person1.Name);
-        // Console.WriteLine("Age: " + person1.Age);
+        Person person1 = new Person("Alice", 25);
+        Console.WriteLine("Print the detalis of the person by accessing each variable: ");
+        Console.WriteLine("Name: " + person1.Name);
+        Console.WriteLine("Age: " + person1.Age);
 
-        // Console.WriteLine("Print the detalis of the person using 'this' internally: ");
-        // person1.PrintDetails();
+        Console.WriteLine("Print the detalis of the person using 'this' internally: ");
+        person1.PrintDetails();
 
-        // // Console.WriteLine(Counter.MyCounter);
-        // // Counter.MyCounter++;
-        // // Counter.MyCounter++;
-        // // Console.WriteLine(Counter.MyCounter);
+        // Console.WriteLine(Counter.MyCounter);
+        // Counter.MyCounter++;
+        // Counter.MyCounter++;
+        // Console.WriteLine(Counter.MyCounter);
 
-        // Console.WriteLine("Initial value of the counter is: " + Counter.GetCounter());
-        // Counter.IncreaseCounter();
-        // Counter.IncreaseCounter();
-        // Console.WriteLine("Value of the counter is: " + Counter.GetCounter());
+        Console.WriteLine("Initial value of the counter is: " + Counter.GetCounter());
+        Counter.IncreaseCounter();
+        Counter.IncreaseCounter();
+        Console.WriteLine("Value of the counter is: " + Counter.GetCounter());
 
-        // int result = Calculator.Add(3, 7);
-        // Console.WriteLine("Result of the addition: " + result);
+        int result = Calculator.Add(3, 7);
+        Console.WriteLine("Result of the addition: " + result);
 
 
         double area = MathHelper.Pi * MathHelper.Square(5);
@@ -68,4 +68,5 @@ class Program
 
         Console.WriteLine("The multiplication of number1 and number 2 is: " + multiplication);
     }
+
 }
