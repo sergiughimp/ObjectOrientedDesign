@@ -9,7 +9,7 @@ namespace task1Library
         public void AddBooks(string title)
         {
             // Add a book to the list
-            books.Add(title)
+            books.Add(title);
         }
         public void DisplayBooks() {
             // Display all books with their position numbers (1, 2, 3...)
