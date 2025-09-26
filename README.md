@@ -1,12 +1,16 @@
-# Lab: Object Oriented Design
-**Week 1**
+# Object Oriented Design
 
----
+# Lecture 1: Introduction to C# Console Programming
+
+This lecture introduces the basics of C# console applications, including printing text with Console.WriteLine(), defining and calling static methods, and working with variables (int, string, bool). It also covers string concatenation, type conversion with int.TryParse(), and reading input using Console.ReadLine(). The lecture explains the program structure: namespaces, classes, and the Main method.
+
+*****
+# Lab 1: Introduction, Basics, and Beyond
+
+This lab practices foundational C# programming concepts: variables, arithmetic operations, functions, and console input/output. Exercises include calculating values, manipulating strings, and creating reusable functions for simple tasks.
 
 ## Project File  
 `01.D.Code`
-
----
 
 ## Tasks
 
