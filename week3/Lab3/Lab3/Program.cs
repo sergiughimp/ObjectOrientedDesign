@@ -9,7 +9,11 @@ class Program
     {
         Library library = new Library();
 
-        library.AddBooks();
+        library.AddBooks("The Alchemist");
+        library.Add("Think and Grow Rich");
+        library.Add("Rich Dad, Poor Dad");
+        library.Add("How to Win Friends & Influence People");
+        library.Add("Emotional Intelligence");
         library.DisplayBooks();
         library.RemoveBook("How to Win Friends & Influence People");
         library.ExistsBook("How to Win Friends & Influence People");
@@ -24,4 +28,5 @@ class Program
         student2.DisplayInfo();
         
     }
+
 }
