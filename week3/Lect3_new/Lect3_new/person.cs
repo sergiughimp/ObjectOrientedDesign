@@ -17,7 +17,7 @@ namespace person
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException("Name cannot be emplty or whitespace");
+                    throw new ArgumentException("Name cannot be empty or whitespace");
                 }
                 else
                 {
