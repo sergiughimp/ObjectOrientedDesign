@@ -28,3 +28,25 @@ A function that combines two strings with a space in between and returns the res
 
 **Task 5: SubtractNumbers Function**  
 A function that takes an integer and a float, performs subtraction, and returns a descriptive message. Introduces mixed data types and formatted output.  
+
+
+# Lab 2: Abstract Classes and Inheritance
+
+This lab focuses on abstract classes and inheritance in C#. It demonstrates how to define an abstract class with both abstract and regular methods, implement derived classes that override the abstract method, and use polymorphism to calculate and display results.
+
+## Tasks
+
+**Task 2: Shape Area Calculation**  
+- Create an abstract class `Shape` with:  
+  - `CalculateArea()` – an abstract method to compute the area of the shape  
+  - `Display()` – a regular method to print the shape type and area  
+
+- Implement two derived classes:  
+  - `Circle` – calculates area as π × radius²  
+  - `Rectangle` – calculates area as width × length  
+
+- Instantiate objects of both classes, calculate their areas using `CalculateArea()`, and display the results using `Display()`.
+
+**Outcome:**  
+This task illustrates the use of abstract classes, inheritance, method overriding, and polymorphism in C#. It provides hands-on practice for designing reusable and extendable object-oriented code, showing how different shapes can share a common interface while implementing their own area calculations.
+
