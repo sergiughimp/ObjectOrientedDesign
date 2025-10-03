@@ -108,3 +108,224 @@ The project consists of two main parts:
 
 This lab demonstrates **object-oriented design** in C# by creating classes with properties, constructors, and methods, while also showing how to use **generic collections** (`List<T>`). The project is structured to separate functionality into **different namespaces**, making the code more readable, modular, and maintainable.
 
+# Lecture 3 – Singleton Patter, Animal Manager and Generics in C#
+
+This project demonstrates **object-oriented programming (OOP)** concepts in C# along with **generic programming**. It covers the following key topics:
+
+- **Inheritance and Abstraction**  
+- **Singleton Pattern**  
+- **Generics in C#**  
+
+---
+
+## Project Structure
+
+### 1. `animals` Namespace
+Contains the **Animal hierarchy** and the **AnimalManager** singleton.
+
+- **Animal (abstract class)**  
+  - Method: `MakeSound()` – must be implemented by derived classes.  
+
+- **Dog (inherits Animal)**  
+  - Overrides `MakeSound()` to print `"Woof!"`  
+
+- **Cat (inherits Animal)**  
+  - Overrides `MakeSound()` to print `"Meow!"`  
+
+- **AnimalManager (Singleton)**  
+  - Manages a single instance for adding animals to a list.  
+  - Method: `AddAnimal(List<Animal> animals, Animal animal)` – adds a new animal to the list.  
+
+---
+
+### 2. `generics` Namespace
+Demonstrates the use of **generics** in C#.
+
+- **Box<T> (generic class)**  
+  - Allows storing and retrieving a value of any type.  
+  - Methods:  
+    - `SetValue(T value)` – stores a value of type `T`.  
+    - `GetValue()` – retrieves the stored value of type `T`.  
+
+---
+
+### 3. `Program.cs`
+Demonstrates the functionality:
+
+1. Creates a **list of animals**.  
+2. Adds a `Dog` and a `Cat` using the **singleton AnimalManager**.  
+3. Iterates through the list and prints each animal's sound using `MakeSound()`.  
+4. Demonstrates generics with `Box<int>` and `Box<string>` storing and retrieving values.  
+
+---
+
+## Example Output
+```text
+Woof!
+Meow!
+intBox contains: 123
+strBox contains: Hello
+```
+
+## Singleton Pattern
+
+**Importance:**  
+- Ensures **only one instance** of `AnimalManager` exists.  
+- Provides **centralized access** for adding and managing animals.  
+- Prevents inconsistencies and redundant instances.
+
+**Characteristics:**  
+- Private constructor prevents external instantiation.  
+- Static instance holds the singleton object.  
+- Global access via `Instance` property.  
+- Lazy initialization – instance created only when first accessed.
+
+---
+
+## Key Concepts Demonstrated
+
+- **Abstraction:** `Animal` defines a common interface for derived classes.  
+- **Inheritance:** `Dog` and `Cat` reuse structure from `Animal`.  
+- **Singleton Pattern:** `AnimalManager` manages animals consistently.  
+- **Generics:** `Box<T>` allows storing values of any type safely.  
+- **Collections:** `List<Animal>` dynamically manages multiple objects.
+
+
+## Summary
+
+This project demonstrates how to:
+
+- Apply **abstraction and inheritance** with an `Animal` base class and specific animal types.  
+- Use the **singleton pattern** with `AnimalManager` to manage a single list of animals.  
+- Implement **generics** with `Box<T>` for type-safe storage of different data types.  
+- Work with **collections** (`List<Animal>`) to dynamically manage multiple objects.
+
+
+# Lab 4 – Library Management System in C#
+
+This project implements a simple **Library Management System** using **object-oriented programming** principles in C#. The system uses **inheritance**, **abstraction**, and the **Singleton pattern** to manage different types of library items such as **Books, Magazines, and Journals**.  
+
+---
+
+## Project Structure
+
+### 1. `libraryItem` Namespace
+Contains the **abstract base class** for all library items.  
+
+- **LibraryItems (abstract class)**  
+  - Properties: `name`, `isAvailable`  
+  - Methods:  
+    - `GetName()` – returns the name of the item.  
+    - `DisplayInfo()` – displays basic information about the item.  
+    - `CheckAvailabilityByName(string itemName)` – checks availability of the item by its name.  
+
+### 2. `printedMaterial` Namespace
+Contains the `PrintedMaterial` class.  
+
+- **PrintedMaterial (inherits LibraryItems)**  
+  - Properties: `genre`, `ISBN`  
+  - Methods:  
+    - Overrides `DisplayInfo()` to show genre and ISBN.  
+
+### 3. `book` Namespace
+Contains the `Book` class.  
+
+- **Book (inherits PrintedMaterial)**  
+  - Properties: `subject`, `recomandedFor`, `plotSummary`  
+  - Methods:  
+    - Overrides `DisplayInfo()` to include subject, recommended audience, and plot summary.  
+
+### 4. `periodical` Namespace
+Contains the `Periodical` class.  
+
+- **Periodical (inherits LibraryItems)**  
+  - Properties: `issueNumber`, `periodicity`  
+  - Methods:  
+    - Overrides `DisplayInfo()` to show issue number and periodicity.  
+
+### 5. `magazine` Namespace
+Contains the `Magazine` class.  
+
+- **Magazine (inherits Periodical)**  
+  - Properties: `celebrityFocus`  
+  - Methods:  
+    - Overrides `DisplayInfo()` to include celebrity focus information.  
+
+### 6. `journal` Namespace
+Contains the `Journal` class.  
+
+- **Journal (inherits Periodical)**  
+  - Properties: `fieldOfStudy`, `editorInChief`  
+  - Methods:  
+    - Overrides `DisplayInfo()` to show the field of study and editor-in-chief.  
+
+### 7. `library` Namespace
+Contains the **LibraryManager** class, which implements a **Singleton pattern**.  
+
+- **LibraryManager (Singleton)**  
+  - Maintains a **single list of all library items** (`List<LibraryItems>`).  
+  - Methods:  
+    - `AddItem(LibraryItems item)` – adds a new item to the library.  
+    - `RemoveItem(LibraryItems item)` – removes an item by object reference.  
+    - `RemoveItem(string name)` – removes an item by name.  
+    - `DisplayItems()` – prints all items in the library with detailed information.  
+    - `CheckAvailability(string itemName)` – checks availability of an item by name across all items.  
+    - `GetAllItems()` – returns the list of all library items.  
+
+### 8. `Program.cs`
+Contains the **main program** for testing the library system.  
+
+- Demonstrates:  
+  - Creating instances of `Book`, `Magazine`, and `Journal`.  
+  - Adding items to the library.  
+  - Displaying all items.  
+  - Checking availability of items by name.  
+  - Removing items by object and by name.  
+  - Accessing the list of all items.  
+
+---
+
+## Features
+
+- **Object-Oriented Design:** Uses inheritance, abstraction, and polymorphism to represent different library items.  
+- **Singleton LibraryManager:** Ensures only one instance of the library manager exists.  
+- **Unified Item List:** All items (books, magazines, journals) are managed in a single list.  
+- **Availability Check:** Can check availability of any item by name.  
+- **Flexible Removal:** Supports removal by object or by name.  
+
+## Example Output
+
+```text
+Book "The Enchanted Forest" added to library.
+Magazine "Star Weekly" added to library.
+Journal "Science Today" added to library.
+
+Library Items:
+The Enchanted Forest (Available: Yes)
+    Genre: Fantasy, ISBN: 978-3-16-148410-0
+    Subject: Magic, Adventure, and Friendship
+    Recommended For: Teens and young adults
+    Plot Summary: When an ancient spell awakens the long-forgotten creatures of the Enchanted Forest…
+
+Star Weekly (Available: Yes)
+    Issue: 10, Periodicity: Weekly
+    Celebrity Focus: Celebrity news
+
+Science Today (Available: Yes)
+    Issue: 5, Periodicity: Monthly
+    Field of Study: Physics
+    Editor in Chief: Dr. John Doe
+
+Availability check:
+The Enchanted Forest is available.
+Star Weekly is available.
+Science Today is available.
+
+Removing items:
+Book "The Enchanted Forest" removed from library.
+Item "The Enchanted Forest" not found.
+
+Remaining items in library:
+Star Weekly
+Science Today
+```
