@@ -108,7 +108,7 @@ The project consists of two main parts:
 
 This lab demonstrates **object-oriented design** in C# by creating classes with properties, constructors, and methods, while also showing how to use **generic collections** (`List<T>`). The project is structured to separate functionality into **different namespaces**, making the code more readable, modular, and maintainable.
 
-# Lecture 3 – Singleton Patter, Animal Manager and Generics in C#
+# Lect 4 – Singleton Patter, Animal Manager and Generics in C#
 
 This project demonstrates **object-oriented programming (OOP)** concepts in C# along with **generic programming**. It covers the following key topics:
 
