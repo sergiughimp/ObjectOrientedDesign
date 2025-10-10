@@ -1,0 +1,15 @@
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/bin/Debug/net8.0/Lab5_Task1
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/bin/Debug/net8.0/Lab5_Task1.deps.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/bin/Debug/net8.0/Lab5_Task1.runtimeconfig.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/bin/Debug/net8.0/Lab5_Task1.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/bin/Debug/net8.0/Lab5_Task1.pdb
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/obj/Debug/net8.0/Lab5_Task1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/obj/Debug/net8.0/Lab5_Task1.AssemblyInfoInputs.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/obj/Debug/net8.0/Lab5_Task1.AssemblyInfo.cs
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/obj/Debug/net8.0/Lab5_Task1.csproj.CoreCompileInputs.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/obj/Debug/net8.0/Lab5_Task1.sourcelink.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/obj/Debug/net8.0/Lab5_Task1.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/obj/Debug/net8.0/refint/Lab5_Task1.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/obj/Debug/net8.0/Lab5_Task1.pdb
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/obj/Debug/net8.0/Lab5_Task1.genruntimeconfig.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Task1/Lab5_Task1/obj/Debug/net8.0/ref/Lab5_Task1.dll
