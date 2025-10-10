@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-// using person;
-// using counter;
-// using calculator;
+using person;
+using counter;
+using calculator;
 using math_helper;
 
 // List<string> names = new List<string>();

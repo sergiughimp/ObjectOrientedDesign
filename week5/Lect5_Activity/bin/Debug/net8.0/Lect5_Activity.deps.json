@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Lect5_Activity/1.0.0": {
+        "runtime": {
+          "Lect5_Activity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lect5_Activity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

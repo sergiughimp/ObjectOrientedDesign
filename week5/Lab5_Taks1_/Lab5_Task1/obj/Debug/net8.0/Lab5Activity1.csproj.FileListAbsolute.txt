@@ -1,0 +1,15 @@
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/bin/Debug/net8.0/Lab5Activity1
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/bin/Debug/net8.0/Lab5Activity1.deps.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/bin/Debug/net8.0/Lab5Activity1.runtimeconfig.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/bin/Debug/net8.0/Lab5Activity1.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/bin/Debug/net8.0/Lab5Activity1.pdb
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/obj/Debug/net8.0/Lab5Activity1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/obj/Debug/net8.0/Lab5Activity1.AssemblyInfoInputs.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/obj/Debug/net8.0/Lab5Activity1.AssemblyInfo.cs
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/obj/Debug/net8.0/Lab5Activity1.csproj.CoreCompileInputs.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/obj/Debug/net8.0/Lab5Activity1.sourcelink.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/obj/Debug/net8.0/Lab5Activity1.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/obj/Debug/net8.0/refint/Lab5Activity1.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/obj/Debug/net8.0/Lab5Activity1.pdb
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/obj/Debug/net8.0/Lab5Activity1.genruntimeconfig.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week5/Lab5_Activity1/Lab5Activity1/obj/Debug/net8.0/ref/Lab5Activity1.dll
