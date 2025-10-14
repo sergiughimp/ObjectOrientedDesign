@@ -426,6 +426,84 @@ Area: 78.53981633974483, Color: Red
 
 This lecture work demonstrates how interfaces and polymorphism in C# allow for flexible, modular program design. By defining contracts that classes must fulfill, interfaces make code more reusable and maintainable. The examples show how to implement interfaces, achieve polymorphism, combine multiple behaviors, and use interface inheritance — all fundamental tools for writing clean and extensible object-oriented code.
 
+---
+
+# Lecture 5: Activity - Interfaces and Polymorphism
+
+In this lecture activity, I explored how **interfaces** define shared behavior across different classes and how **polymorphism** enables interaction between diverse objects through common contracts. The goal was to understand how to design **flexible**, **reusable**, and **extensible** code using interfaces in C#.
+
+---
+
+## Project Overview
+
+The project simulates a simple **battle system** where characters can attack and defend using shared interface definitions.  
+A main program (`Program.cs`) demonstrates how interfaces allow multiple object types to participate in the same operations through polymorphism.
+
+The implementation includes:
+
+- **`IAttackable`** – Defines attack behavior with an `Attack()` method and `AttackPower` property.  
+- **`IDefendable`** – Defines defense behavior with a `Defend()` method and `DefensePower` property.  
+- **`Warrior`** – Implements both interfaces, capable of attacking and defending.  
+- **`Mage`** – Implements only `IAttackable`, focusing on magical attacks.  
+- **`Battle()`** – A method that accepts any `IAttackable` object, demonstrating polymorphic interaction.  
+
+The `Main()` function creates instances of `Warrior` and `Mage` classes, initiates battles, and executes group attacks, showing how each object behaves based on the interfaces it implements.
+
+---
+
+## Project Structure
+
+### `battleSimulation` Namespace
+
+- **IAttackable (interface)**  
+  - Property: `int AttackPower`  
+  - Method: `void Attack()`  
+
+- **IDefendable (interface)**  
+  - Property: `int DefensePower`  
+  - Method: `void Defend()`  
+
+- **Warrior (implements IAttackable, IDefendable)**  
+  - Properties: `Name`, `AttackPower`, `DefensePower`  
+  - Methods:  
+    - `Attack()` – Displays attack power.  
+    - `Defend()` – Displays defense power.  
+
+- **Mage (implements IAttackable)**  
+  - Properties: `Name`, `AttackPower`  
+  - Methods:  
+    - `Attack()` – Displays magical attack message.  
+    - `Healing()` – Performs a healing spell (not part of the interface).  
+
+---
+
+## Example Output
+```
+=== Battle Begins ===
+Conan attacks with power 20!
+Thor defends with power 10!
+=== Battle Ends ===
+
+=== Battle Begins ===
+Merlin casts a spell with power 5!
+=== Battle Ends ===
+
+=== All Characters Attack! ===
+Conan attacks with power 20!
+Conan defends with power 15!
+
+Thor attacks with power 25!
+Thor defends with power 10!
+
+Merlin casts a spell with power 5!
+```
+---
+
+## Summary
+
+This lecture activity demonstrates how **interfaces** promote **code modularity** and **polymorphism** in C#. By implementing `IAttackable` and `IDefendable`, the project shows how different classes can share behavior while keeping their unique characteristics. The result is a **clean**, **scalable**, and **maintainable** design that follows the principles of object-oriented programming.
+
+---
 
 # Lecture 6: SOLID Principles in C#
 
