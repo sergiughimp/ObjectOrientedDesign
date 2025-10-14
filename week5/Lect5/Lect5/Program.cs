@@ -1,27 +1,26 @@
 ﻿using System;
-// using interface_;
+using interface_;
 // using polymorphism_interface;
-using multiple_interface;
+// using multiple_interface;
 // using inheritance_interface;
 
 class Program
 {
     // main for the interface_
-    // public static void Main(string[] args)
-    // {
-    //     Car car2 = new Car();
-    //     IVehicle vehicle = new Car();
+    public static void Main(string[] args)
+    {
+        Car car2 = new Car();
+        IVehicle vehicle = new Car();
 
-    //     vehicle.StartEngine();
-    //     Console.WriteLine(vehicle.CurrentSpeed);
+        vehicle.StartEngine();
+        Console.WriteLine(vehicle.CurrentSpeed);
 
-    //     vehicle.StopEngine();
-    //     car2.PlayMusic();
-    // }
+        vehicle.StopEngine();
+        car2.PlayMusic();
+    }
 
 
-    // main for the polymorphism_interface
-
+    // // main for the polymorphism_interface
     // public static void TestDrive(IVehicle vehicle)
     // {
     //     Console.WriteLine($"Test driving:{vehicle.GetVehicleType()}");
@@ -33,15 +32,15 @@ class Program
     //     TestDrive(new Truck());
     // }
 
-    // main for the multiple_interface
-    public static void Main(string[] args)
-    {
-        FlyingCar cool = new FlyingCar();
-        cool.StartEngine();
-        cool.Fly();
-    }
+    // // main for the multiple_interface
+    // public static void Main(string[] args)
+    // {
+    //     FlyingCar cool = new FlyingCar();
+    //     cool.StartEngine();
+    //     cool.Fly();
+    // }
 
-    // main for the inheritance_interface
+    // // main for the inheritance_interface
     // public static void Main(string[] args)
     // {
     //     // IColoredShape circle = new ColoredCircle();
