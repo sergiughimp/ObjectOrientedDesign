@@ -1,0 +1,15 @@
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/bin/Debug/net8.0/Lab6
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/bin/Debug/net8.0/Lab6.deps.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/bin/Debug/net8.0/Lab6.runtimeconfig.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/bin/Debug/net8.0/Lab6.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/bin/Debug/net8.0/Lab6.pdb
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/obj/Debug/net8.0/Lab6.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/obj/Debug/net8.0/Lab6.AssemblyInfoInputs.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/obj/Debug/net8.0/Lab6.AssemblyInfo.cs
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/obj/Debug/net8.0/Lab6.csproj.CoreCompileInputs.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/obj/Debug/net8.0/Lab6.sourcelink.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/obj/Debug/net8.0/Lab6.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/obj/Debug/net8.0/refint/Lab6.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/obj/Debug/net8.0/Lab6.pdb
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/obj/Debug/net8.0/Lab6.genruntimeconfig.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week6/Lab6/obj/Debug/net8.0/ref/Lab6.dll

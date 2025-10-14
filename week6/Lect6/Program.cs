@@ -9,29 +9,29 @@ using dependencyInversionPrinciple;
 public class Program
 {
 
-    // // Single Responsibility Principle
-    // public static void Main(string[] args)
-    // {
-    //     // Create an Employee
-    //     Employee employee = new Employee
-    //     {
-    //         Name = "John Smith",
-    //         Salary = 3000m
-    //     };
+    // Single Responsibility Principle
+    public static void Main(string[] args)
+    {
+        // Create an Employee
+        Employee employee = new Employee
+        {
+            Name = "John Smith",
+            Salary = 3000m
+        };
 
-    //     // Create PayrollCalculator and calculate pay
-    //     PayrollCalculator payrollCalculator = new PayrollCalculator();
-    //     decimal totalPay = payrollCalculator.CalculatePay(employee);
+        // Create PayrollCalculator and calculate pay
+        PayrollCalculator payrollCalculator = new PayrollCalculator();
+        decimal totalPay = payrollCalculator.CalculatePay(employee);
 
-    //     // Generate report
-    //     EmployeeReportGenerator reportGenerator = new EmployeeReportGenerator();
-    //     string report = reportGenerator.GenerateReport(employee);
+        // Generate report
+        EmployeeReportGenerator reportGenerator = new EmployeeReportGenerator();
+        string report = reportGenerator.GenerateReport(employee);
 
-    //     // Display results
-    //     Console.WriteLine(report);
-    //     Console.WriteLine($"Base Salary: {employee.Salary:C}");
-    //     Console.WriteLine($"Total Pay (with bonus): {totalPay:C}");
-    // }
+        // Display results
+        Console.WriteLine(report);
+        Console.WriteLine($"Base Salary: {employee.Salary:C}");
+        Console.WriteLine($"Total Pay (with bonus): {totalPay:C}");
+    }
 
     // // Open Close Principle
     // public static void Main(string[] args) {
@@ -92,24 +92,24 @@ public class Program
     //     Console.WriteLine("Demonstration complete — interfaces are separated according to responsibilities.");
     // }
 
-    // Dependency Inversion Principle
-    public static void Main(string[] args)
-    {
-        // Create message services
-        IMessageService emailService = new EmailService();
-        IMessageService smsService = new SMSService();
+    // // Dependency Inversion Principle
+    // public static void Main(string[] args)
+    // {
+    //     // Create message services
+    //     IMessageService emailService = new EmailService();
+    //     IMessageService smsService = new SMSService();
 
-        // Inject EmailService into Notification
-        Notification emailNotification = new Notification(emailService);
-        emailNotification.Send("Meeting at 3 PM");
+    //     // Inject EmailService into Notification
+    //     Notification emailNotification = new Notification(emailService);
+    //     emailNotification.Send("Meeting at 3 PM");
 
-        Console.WriteLine();
+    //     Console.WriteLine();
 
-        // Inject SMSService into Notification
-        Notification smsNotification = new Notification(smsService);
-        smsNotification.Send("Reminder: Project deadline tomorrow");
+    //     // Inject SMSService into Notification
+    //     Notification smsNotification = new Notification(smsService);
+    //     smsNotification.Send("Reminder: Project deadline tomorrow");
 
-        Console.WriteLine();
-        Console.WriteLine("Demonstration complete — Dependency Inversion Principle applied successfully.");
-    }
+    //     Console.WriteLine();
+    //     Console.WriteLine("Demonstration complete — Dependency Inversion Principle applied successfully.");
+    // }
 }
