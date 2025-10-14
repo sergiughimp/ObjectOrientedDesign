@@ -329,3 +329,139 @@ Remaining items in library:
 Star Weekly
 Science Today
 ```
+# Lecture 6: SOLID Principles in C#
+
+In this lecture, I explored the five SOLID principles of object-oriented programming in C#. The goal was to understand how to write clean, maintainable, and flexible code by separating responsibilities, using abstractions, and designing classes and interfaces thoughtfully.
+
+## Project Overview
+
+I created a main program (`Program.cs`) that demonstrates each SOLID principle in its own namespace:
+
+- **Single Responsibility Principle (SRP)** – Separates concerns by having `Employee`, `PayrollCalculator`, and `EmployeeReportGenerator` handle distinct tasks.
+- **Open/Closed Principle (OCP)** – Shows how `Shape` and `Rectangle` can be extended without modifying existing code. `AreaCalculator` uses polymorphism to calculate area.
+- **Liskov Substitution Principle (LSP)** – Demonstrates how subclasses like `Sparrow` and `Penguin` behave correctly when substituted for the base class `Bird`.
+- **Interface Segregation Principle (ISP)** – Uses small, specific interfaces (`IWorkable`, `IFeedable`, `IMeetingAttendee`) so classes only implement what they need (`RobotWorker`, `HumanWorker`).
+- **Dependency Inversion Principle (DIP)** – High-level modules like `Notification` depend on the `IMessageService` interface rather than concrete implementations (`EmailService`, `SMSService`).
+
+---
+
+The `Program.cs` file contains commented-out `Main` methods for each principle — you can uncomment one section at a time to see how each principle works.  
+
+Each principle is implemented in its own namespace, making the code modular, easy to read, maintain, and extend.  
+The main program demonstrates behaviors such as calculations, polymorphism, message sending, and class interactions according to each principle.
+
+
+## 1. Single Responsibility Principle (SRP)
+
+**Namespace:** `singleResponsibilityPrinciple`  
+**Goal:** Each class has one clear responsibility.
+
+### Project Structure
+- **Employee**  
+  - Properties: `Name`, `Salary`  
+  - Holds employee data.  
+- **PayrollCalculator**  
+  - Methods: `CalculatePay(Employee employee)` → calculates total pay.  
+- **EmployeeReportGenerator**  
+  - Methods: `GenerateReport(Employee employee)` → generates a simple employee report.  
+
+**Example Output:**
+```
+Employee: John Smith
+Base Salary: £3,000.00
+Total Pay (with bonus): £3,300.00
+```
+---
+## 2. Open/Closed Principle (OCP)
+
+**Namespace:** `openClosePrinciple`  
+**Goal:** Add new features without changing existing code.
+
+### Project Structure
+- **Shape (abstract class)**  
+  - Methods: `CalculateArea()` (abstract) → implemented by derived shapes.  
+- **Rectangle (inherits Shape)**  
+  - Properties: `Width`, `Height`  
+  - Overrides `CalculateArea()` to compute rectangle area.  
+- **AreaCalculator**  
+  - Methods: `CalculateArea(Shape shape)` → uses polymorphism to calculate any shape’s area.  
+
+**Example Output:**
+```
+Rectangle width: 5
+Rectangle height: 3
+Area: 15
+```
+---
+## 3. Liskov Substitution Principle (LSP)
+
+**Namespace:** `liskovPrinciple`  
+**Goal:** Subclasses must behave correctly when used as their base type.
+
+### Project Structure
+- **Bird (abstract class)**  
+  - Methods: `MakeSound()` (abstract), `Eat()` (virtual)  
+- **Sparrow (inherits Bird, implements IFlyable)**  
+  - Methods: `Fly()` → prints flying behavior  
+  - Overrides `MakeSound()` → prints chirp  
+- **Penguin (inherits Bird)**  
+  - Overrides `MakeSound()` → prints squawk  
+  - Cannot fly (does not implement IFlyable)  
+
+**Example Output:**
+```
+Chirp
+Flying high!
+Squawk
+Demonstration complete — both birds share behavior correctly without breaking Liskov’s principle.
+```
+---
+## 4. Interface Segregation Principle (ISP)
+
+**Namespace:** `interfaceSegregationPrinciple`  
+**Goal:** Separate large interfaces into smaller, specific ones.
+
+### Project Structure
+- **IWorkable** → Method: `Work()`  
+- **IFeedable** → Method: `Eat()`  
+- **IMeetingAttendee** → Method: `AttendMeeting()`  
+- **RobotWorker (implements IWorkable)** → can only work  
+- **HumanWorker (implements IWorkable, IFeedable, IMeetingAttendee)** → works, eats, attends meetings  
+
+**Example Output:**
+```
+Robot working...
+Human working...
+Eating lunch...
+In meeting...
+Demonstration complete — interfaces are separated according to responsibilities.
+```
+---
+## 5. Dependency Inversion Principle (DIP)
+
+**Namespace:** `dependencyInversionPrinciple`  
+**Goal:** High-level classes depend on interfaces, not concrete implementations.
+
+### Project Structure
+- **IMessageService (interface)** → Method: `SendMessage(string message)`  
+- **EmailService (implements IMessageService)** → sends email messages  
+- **SMSService (implements IMessageService)** → sends SMS messages  
+- **Notification**  
+  - Constructor: `Notification(IMessageService messageService)`  
+  - Methods: `Send(string message)` → sends message through injected service  
+
+**Example Output:**
+```
+Sending Email: Meeting at 3 PM
+Sending SMS: Reminder: Project deadline tomorrow
+Demonstration complete — Dependency Inversion Principle applied successfully.
+```
+
+---
+
+## Summary
+
+This lecture work demonstrates how the SOLID principles improve code design by separating responsibilities, using abstractions, and keeping classes and interfaces focused. It highlights clean, modular programming practices in C# and shows how to build systems that are maintainable, extensible, and easy to understand.  Together, these examples tell a story of how thoughtful structure turns fragile code into flexible, robust software.
+
+
+
