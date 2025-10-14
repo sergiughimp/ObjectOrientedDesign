@@ -329,6 +329,104 @@ Remaining items in library:
 Star Weekly
 Science Today
 ```
+
+# Lecture 5: Interfaces and Polymorphism in C#
+
+In this lecture, I explored how **interfaces** in C# define contracts that classes must follow and how **polymorphism** allows objects of different classes to be treated through a shared interface.  
+The goal was to understand how interfaces promote flexibility, modularity, and code reuse in object-oriented programming.
+
+---
+
+# Project Overview
+
+I created a main program (`Program.cs`) that demonstrates multiple interface concepts, including basic interface implementation, polymorphism, multiple interfaces, and interface inheritance. Each concept is implemented in a separate namespace to keep the code organized and easy to understand.
+
+---
+
+## 1. Basic Interface Implementation
+
+**Namespace:** `interface_`  
+**Goal:** Demonstrate how a class can implement an interface and define specific behaviors.
+
+### Project Structure
+- **IVehicle (interface)**  
+  - Methods: `StartEngine()`, `StopEngine()`  
+  - Property: `CurrentSpeed`  
+- **Car (implements IVehicle)**  
+  - Implements engine start and stop functionality.  
+  - Tracks `CurrentSpeed` when the engine starts or stops.  
+  - Adds an extra method `PlayMusic()` to show class-specific behavior.  
+
+**Example Output:**
+```
+Car engine started
+10
+Car engine stopped
+Playing music...
+```
+---
+## 2. Interface Polymorphism
+
+**Namespace:** `polymorphism_interface`  
+**Goal:** Show how the same interface can be used for different types of vehicles through polymorphism.
+
+### Project Structure
+- **IVehicle (interface)**  
+  - Methods: `StartEngine()`, `GetVehicleType()`  
+- **Car (implements IVehicle)**  
+  - Defines `StartEngine()` and identifies as a car.  
+- **Truck (implements IVehicle)**  
+  - Defines `StartEngine()` and identifies as a truck.  
+
+**Example Output:**
+```
+Test driving: Car
+Car: Vrroom!
+Test driving: Truck
+Truck: VRROOOM!
+```
+---
+## 3. Multiple Interfaces
+
+**Namespace:** `multiple_interface`  
+**Goal:** Demonstrate how a single class can implement more than one interface to gain multiple behaviors.
+
+### Project Structure
+- **IVehicle (interface)** → Method: `StartEngine()`  
+- **IFlyable (interface)** → Method: `Fly()`  
+- **FlyingCar (implements IVehicle, IFlyable)**  
+  - Can start the engine and also fly, combining both behaviors.  
+
+**Example Output:**
+```
+Engine started
+Taking off!
+```
+---
+## 4. Interface Inheritance
+
+**Namespace:** `inheritance_interface`  
+**Goal:** Show how interfaces can inherit from one another to build extended abstractions.
+
+### Project Structure
+- **IShape (interface)** → Method: `GetArea()`  
+- **IColoredShape (inherits IShape)** → Adds property: `Color`  
+- **ColoredCircle (implements IColoredShape)**  
+  - Properties: `Radius`, `Color`  
+  - Implements `GetArea()` to calculate the area of the circle.  
+
+**Example Output:**
+```
+Area: 78.53981633974483, Color: Red
+```
+
+---
+
+## Summary
+
+This lecture work demonstrates how interfaces and polymorphism in C# allow for flexible, modular program design. By defining contracts that classes must fulfill, interfaces make code more reusable and maintainable. The examples show how to implement interfaces, achieve polymorphism, combine multiple behaviors, and use interface inheritance — all fundamental tools for writing clean and extensible object-oriented code.
+
+
 # Lecture 6: SOLID Principles in C#
 
 In this lecture, I explored the five SOLID principles of object-oriented programming in C#. The goal was to understand how to write clean, maintainable, and flexible code by separating responsibilities, using abstractions, and designing classes and interfaces thoughtfully.
