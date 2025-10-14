@@ -507,7 +507,7 @@ This lecture activity demonstrates how **interfaces** promote **code modularity*
 
 # Lab 5: Task 1 — Implementing UML Class Diagram and Multiple Inheritance in C#
 
-In this lab, I explored how to design and implement interfaces and classes based on a UML class diagram. The task focused on demonstrating **interface-based design** and how to use **multiple inheritance through interfaces** in C#.  
+In this task from lab5, I explored how to design and implement interfaces and classes based on a UML class diagram. The task focused on demonstrating **interface-based design** and how to use **multiple inheritance through interfaces** in C#.  
 
 ## Project Overview
 
@@ -596,6 +596,112 @@ I am sending some text from Tablet: Hello via IDevice
 This lecture work demonstrates how **interfaces can replace traditional multiple inheritance** in C#, allowing classes to inherit behavior from multiple sources. By implementing both **wired and wireless communication interfaces** in the `Tablet` class, the project showcases a flexible design where new devices can be easily added and integrated. The addition of the **`Tablet`** and **`IDevice`** interfaces extends the UML model and highlights how abstraction leads to clean, scalable, and reusable code structures.
 
 ---
+# Lab 5: Task 2 — Inventory System in C#
+
+In this task from lab 5, I explored how to create a simple **game inventory system** in C# using **abstract classes, interfaces, and the singleton pattern**. The project demonstrates how to manage different types of items, interact with them, and keep the inventory organized and flexible.
+
+## Project Overview
+
+The project defines several **item types** (`Weapon`, `Potion`, `Shield`) and a **singleton inventory manager** that handles all items. Interfaces are used to define item behaviors like dealing damage or consuming single-use items.  
+
+The main program demonstrates how to:
+
+- Add items to the inventory.
+- Use items according to their specific behaviors.
+- Automatically remove single-use items after use.
+- Show the current inventory at any time.
+
+---
+
+## Project Structure
+
+### 1. `item` Namespace
+Contains the **abstract base class** for all items.
+
+- **`Item` (abstract class)**  
+  - Properties: `Name`, `Weight`, `Value`  
+  - Methods: `Use()` → implemented in derived classes.
+
+### 2. `interfaces` Namespace
+Defines behaviors that items can implement.
+
+- **`IDamage`** → Method: `DealDamage()`  
+- **`ISingleUse`** → Method: `Consume()`  
+
+### 3. `weapon` Namespace
+Contains the `Weapon` class.
+
+- **`Weapon` (inherits `Item`, implements `IDamage`)**  
+  - Properties: `Damage`  
+  - Methods:  
+    - `Use()` → attacks and deals damage  
+    - `DealDamage()` → prints damage to the enemy
+
+### 4. `potion` Namespace
+Contains the `Potion` class.
+
+- **`Potion` (inherits `Item`, implements `ISingleUse`)**  
+  - Properties: `HealAmount`  
+  - Methods:  
+    - `Use()` → heals player and consumes potion  
+    - `Consume()` → prints that potion is consumed
+
+### 5. `shield` Namespace
+Contains the `Shield` class.
+
+- **`Shield` (inherits `Item`)**  
+  - Properties: `Defence`  
+  - Methods:  
+    - `Use()` → blocks incoming damage
+
+### 6. `inventoryManager` Namespace
+Contains the **singleton class** `InventoryManager` to handle all items.
+
+- **`InventoryManager`**  
+  - Private static instance `_instance`  
+  - Methods:  
+    - `AddItem(Item item)` → adds item to inventory  
+    - `removeItem(Item item)` → removes item from inventory  
+    - `useItem(Item item)` → uses item and removes if single-use  
+    - `showItemsInvetory()` → displays all items in inventory
+
+- Singleton pattern ensures only **one inventory manager instance** exists.
+
+---
+
+## Example Output
+```
+Excalibur added to inventory.
+Health Potion added to inventory.
+Iron Shield added to inventory.
+
+ Current Inventory: 
+ - Excalibur (Weight: 5.5, Value: 1000)
+ - Health Potion (Weight: 0.5, Value: 50)
+ - Iron Shield (Weight: 7, Value: 200)
+
+Using Items:
+Excalibur is used to attack dealing 50 damage!
+Excalibur deals 50 damage to the enemy!
+Health Potion is used to heal 30 HP!
+Health Potion is consumed!
+Health Potion removed from inventory.
+Iron Shield is used to block 20 damage!
+
+ Current Inventory: 
+ - Excalibur (Weight: 5.5, Value: 1000)
+ - Iron Shield (Weight: 7, Value: 200)
+```
+
+
+---
+
+## Summary
+
+This taks from lab 5 work demonstrates how to design a **flexible and modular inventory system** using C#. Abstract classes define general item properties, interfaces define specific behaviors, and the singleton pattern ensures centralized inventory management. The system allows for easy addition of new item types and behaviors while keeping the inventory logic clean and maintainable.
+
+
+
 
 # Lecture 6: SOLID Principles in C#
 
