@@ -505,6 +505,98 @@ This lecture activity demonstrates how **interfaces** promote **code modularity*
 
 ---
 
+# Lab 5: Task 1 — Implementing UML Class Diagram and Multiple Inheritance in C#
+
+In this lab, I explored how to design and implement interfaces and classes based on a UML class diagram. The task focused on demonstrating **interface-based design** and how to use **multiple inheritance through interfaces** in C#.  
+
+## Project Overview
+
+The project defines several interfaces and device classes that represent different types of connectivity — wired, wireless, and combined. Each device implements only the interfaces relevant to its functionality. Additionally, I extended the UML design by introducing two extra components:  
+
+- **`Tablet` class** – A new device that supports **both WiFi and wired connections**, showcasing multiple inheritance through interfaces.  
+- **`IDevice` interface** – A new abstraction that allows uniform handling of all device types.
+
+---
+
+## Project Structure
+
+### `deviceConnectivity` Namespace
+Contains all interfaces and device classes implementing various connectivity types.
+
+#### Interfaces
+- **`IDevice`**  
+  - Methods:  
+    - `EstablishConnection()` – sets up a device connection.  
+    - `SendData(string text)` – sends data to another device.  
+  - Added to provide a **common interface** for all devices.  
+
+- **`IConnect`**  
+  - Method: `EstablishConnection()`  
+
+- **`ICommunicate`**  
+  - Method: `SendData(string text)`  
+
+- **`IWirelessCommunicate`** (inherits `ICommunicate`)  
+  - Method: `ConnectToWifi()`  
+
+- **`IWiredConnect`** (inherits `IConnect`)  
+  - Method: `PlugInCable()`  
+
+#### Classes
+- **`SmartPhone`**  
+  - Implements: `IDevice`, `IConnect`, `IWirelessCommunicate`  
+  - Behaviors: Connects via WiFi, establishes a connection, and sends data.
+
+- **`DesktopComputer`**  
+  - Implements: `IDevice`, `ICommunicate`, `IWiredConnect`  
+  - Behaviors: Connects using a wired cable, establishes connection, and sends data.
+
+- **`Tablet`** *(Added as an extra feature)*  
+  - Implements: `IDevice`, `IWirelessCommunicate`, `IWiredConnect`  
+  - Behaviors: Can connect both wirelessly and via cable, establish connection, and send data.  
+  - Demonstrates **multiple inheritance** by combining two connectivity interfaces.
+
+---
+
+## Example Output
+```
+=== Smart Phone ===
+Smart Phone: Connection to Wifi has been made
+Smart Phone: Connection has been established
+I am sending some text from Smart Phone: Hello from phone
+
+=== Desktop Computer ===
+Desktop Computer: Plug in the cable
+Desktop Computer: Connection has been established
+I am sending some text from Desktop Computer: Hello from desktop
+
+=== Tablet ===
+Tablet: Plug in the cable
+Tablet: Connection to Wifi has been made
+Tablet: Connection has been established
+I am sending some text from Tablet: Hello from tablet
+
+=== IDevice Interface ===
+Using IDevice interface to send data to all devices:
+
+Smart Phone: Connection has been established
+I am sending some text from Smart Phone: Hello via IDevice
+
+Desktop Computer: Connection has been established
+I am sending some text from Desktop Computer: Hello via IDevice
+
+Tablet: Connection has been established
+I am sending some text from Tablet: Hello via IDevice
+```
+
+---
+
+## Summary
+
+This lecture work demonstrates how **interfaces can replace traditional multiple inheritance** in C#, allowing classes to inherit behavior from multiple sources. By implementing both **wired and wireless communication interfaces** in the `Tablet` class, the project showcases a flexible design where new devices can be easily added and integrated. The addition of the **`Tablet`** and **`IDevice`** interfaces extends the UML model and highlights how abstraction leads to clean, scalable, and reusable code structures.
+
+---
+
 # Lecture 6: SOLID Principles in C#
 
 In this lecture, I explored the five SOLID principles of object-oriented programming in C#. The goal was to understand how to write clean, maintainable, and flexible code by separating responsibilities, using abstractions, and designing classes and interfaces thoughtfully.
