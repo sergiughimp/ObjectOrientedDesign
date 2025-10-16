@@ -837,5 +837,61 @@ Demonstration complete — Dependency Inversion Principle applied successfully.
 
 This lecture work demonstrates how the SOLID principles improve code design by separating responsibilities, using abstractions, and keeping classes and interfaces focused. It highlights clean, modular programming practices in C# and shows how to build systems that are maintainable, extensible, and easy to understand.  Together, these examples tell a story of how thoughtful structure turns fragile code into flexible, robust software.
 
+--- 
+
+# Lab 6 - Task 1: Notification Service Refactor (SOLID Principles)
+
+This project demonstrates a refactoring of a simple **NotificationService** in C# to better follow **SOLID principles**, improving clarity, maintainability, and scalability.
+
+---
+
+## Overview
+
+Originally, the `NotificationService` class handled all types of notifications (Email, SMS, WhatsApp) within one method using multiple `if` statements.  
+This design made the code harder to maintain and extend.
+
+The refactored version separates responsibilities into individual classes and keeps the `NotificationService` focused only on **managing message delivery**, not the sending logic itself.
+
+---
+
+## Applied SOLID Principles
+
+### 1. Single Responsibility Principle (SRP)
+A class should have only one reason to change — it should do one thing only.
+
+- Each notification type has its **own dedicated class**:
+  - `EmailService` → handles only email messages  
+  - `SMSService` → handles only SMS messages  
+  - `WhatsAppService` → handles only WhatsApp messages  
+- `NotificationService` is responsible **only** for coordinating which service to call.
+
+**Result:**  
+Simpler, cleaner code where each class has one clear purpose.
+
+---
+
+### 2. Open/Closed Principle (OCP)
+Classes should be open for extension but closed for modification.
+
+- To add a new notification type (e.g., `SlackService`), you simply **create a new class** with its own `Send(string message)` method.
+- Existing classes don’t need to be modified, which makes the system easier to extend and less prone to bugs.
+
+**Result:**  
+Easily extendable system — new features can be added without touching existing, tested code.
+
+---
+
+## Example Usage
+
+```csharp
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        NotificationService service = new NotificationService();
+        service.SendNotification("Welcome to SOLID Lab!", "Email");
+        service.SendNotification("System update available!", "WhatsApp");
+    }
+}
 
 
