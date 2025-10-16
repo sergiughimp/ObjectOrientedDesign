@@ -837,5 +837,233 @@ Demonstration complete — Dependency Inversion Principle applied successfully.
 
 This lecture work demonstrates how the SOLID principles improve code design by separating responsibilities, using abstractions, and keeping classes and interfaces focused. It highlights clean, modular programming practices in C# and shows how to build systems that are maintainable, extensible, and easy to understand.  Together, these examples tell a story of how thoughtful structure turns fragile code into flexible, robust software.
 
+--- 
 
+# Lab 6 - Task 1: Notification Service Refactor (SOLID Principles)
 
+This project demonstrates a refactoring of a simple **NotificationService** in C# to better follow **SOLID principles**, improving clarity, maintainability, and scalability.
+
+---
+
+## Overview
+
+Originally, the `NotificationService` class handled all types of notifications (Email, SMS, WhatsApp) within one method using multiple `if` statements.  
+This design made the code harder to maintain and extend.
+
+The refactored version separates responsibilities into individual classes and keeps the `NotificationService` focused only on **managing message delivery**, not the sending logic itself.
+
+---
+
+## Applied SOLID Principles
+
+### 1. Single Responsibility Principle (SRP)
+A class should have only one reason to change — it should do one thing only.
+
+- Each notification type has its **own dedicated class**:
+  - `EmailService` → handles only email messages  
+  - `SMSService` → handles only SMS messages  
+  - `WhatsAppService` → handles only WhatsApp messages  
+- `NotificationService` is responsible **only** for coordinating which service to call.
+
+**Result:**  
+Simpler, cleaner code where each class has one clear purpose.
+
+---
+
+### 2. Open/Closed Principle (OCP)
+Classes should be open for extension but closed for modification.
+
+- To add a new notification type (e.g., `SlackService`), you simply **create a new class** with its own `Send(string message)` method.
+- Existing classes don’t need to be modified, which makes the system easier to extend and less prone to bugs.
+
+**Result:**  
+Easily extendable system — new features can be added without touching existing, tested code.
+
+---
+
+## Example Usage
+
+```csharp
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        NotificationService service = new NotificationService();
+        service.SendNotification("Welcome to SOLID Lab!", "Email");
+        service.SendNotification("System update available!", "WhatsApp");
+    }
+}
+```
+
+---
+
+# Lab 6 - Task 2: Notification Service Refactor with Interface
+
+Building on Task 1, this task introduces an **interface-based design** to further decouple `NotificationService` from concrete implementations. The goal is to make the system more flexible and truly open for extension.
+
+---
+
+## Overview
+
+In Task 1, `NotificationService` coordinated messages by directly referencing concrete service classes (`EmailService`, `SMSService`, `WhatsAppService`).  
+
+In Task 2:  
+- An interface `INotificationChannel` is introduced.  
+- All notification services (`EmailService`, `SMSService`, `WhatsAppService`, `SlackService`) implement this interface.  
+- `NotificationService` now depends on the **abstraction** (`INotificationChannel`) rather than specific classes.  
+
+This design allows new notification channels to be added seamlessly without modifying existing high-level code.
+
+---
+
+## Key Improvements
+
+- **Dependency Inversion Principle (DIP):**  
+  `NotificationService` depends on the interface `INotificationChannel` instead of concrete implementations, decoupling high-level coordination from low-level sending logic.
+
+- **Full Open/Closed Principle (OCP):**  
+  New notification channels, such as `SlackService`, can be added **without modifying** `NotificationService`. The system is now fully extendable.
+
+- **Polymorphism and Liskov Substitution Principle (LSP):**  
+  Any class implementing `INotificationChannel` can be passed to `SendNotification`, ensuring consistent behavior across all notification types.
+
+- **Maintains SRP:**  
+  Each service class still has a single responsibility: sending messages of its type.
+
+---
+
+## Example Usage
+
+```csharp
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        NotificationService service = new NotificationService();
+
+        service.SendNotification("Email Message!", new EmailService());
+        service.SendNotification("Sms Message!", new SMSService());
+        service.SendNotification("WhatApp Message!", new WhatsAppService());
+        service.SendNotification("Slack Message!", new SlackService());
+    }
+}
+```
+
+# Lab 6 - Task 3: Substitutability with TestChannel
+
+This task demonstrates the **Liskov Substitution Principle (LSP)**, ensuring that any class implementing the `INotificationChannel` interface can be used interchangeably without modifying the `NotificationService`.
+
+---
+
+## Overview
+
+- Introduce `TestChannel` implementing `INotificationChannel`.  
+- `TestChannel` can replace any existing service (like `EmailService`) in `NotificationService`.  
+- Shows that the system behaves correctly with any class that adheres to the interface.
+
+---
+
+## Code
+
+```csharp
+public class TestChannel : INotificationChannel
+{
+    public void Send(string message)
+    {
+        Console.WriteLine("Test Channel: " + message);
+    }
+}
+```
+
+## Task 4: Focused Interfaces and Scheduling
+
+### Refactor Overview
+
+This task introduces **smaller, focused interfaces** to separate different responsibilities:
+
+- **INotificationChannel** → defines the `Send(string message)` method for sending messages.  
+- **ISchedulable** → defines the `Schedule(string message, DateTime time)` method for scheduling messages.  
+
+Only services that support scheduling (e.g., `EmailService`) implement `ISchedulable`.  
+Services that do not support scheduling (e.g., `SMSService`) implement only `INotificationChannel`.  
+
+This design follows the **Interface Segregation Principle (ISP)**, ensuring classes implement only the methods relevant to their responsibilities.
+
+---
+
+### Example Code
+
+```csharp
+public interface ISchedulable
+{
+    void Schedule(string message, DateTime time);
+}
+
+public class EmailService : INotificationChannel, ISchedulable
+{
+    public void Send(string message)
+    {
+        Console.WriteLine("Sending Email: " + message);
+    }
+
+    public void Schedule(string message, DateTime time)
+    {
+        Console.WriteLine($"Email scheduled at {time}: {message}");
+    }
+}
+
+public class SMSService : INotificationChannel
+{
+    public void Send(string message)
+    {
+        Console.WriteLine("Sending SMS: " + message);
+    }
+}
+```
+# Lab 6 - Task 5: Constructor Dependency Injection
+
+## Overview
+
+In this task, the `NotificationService` is refactored to **depend on interfaces via constructor injection**, improving testability, flexibility, and adherence to SOLID principles.  
+
+- The service no longer creates concrete channel objects internally.  
+- Any class implementing `INotificationChannel` can be injected.  
+- Scheduling functionality is supported for classes implementing `ISchedulable` (e.g., `EmailService`).
+
+---
+
+## Example Code
+
+```csharp
+public class NotificationService
+{
+    private readonly INotificationChannel _channel;
+
+    public NotificationService(INotificationChannel channel)
+    {
+        _channel = channel;
+    }
+
+    public void SendNotification(string message) => _channel.Send(message);
+
+    public void ScheduleNotification(string message, DateTime time, ISchedulable schedulable)
+        => schedulable.Schedule(message, time);
+}
+```
+Usage in Main
+
+```csharp
+EmailService emailService = new EmailService();
+NotificationService service = new NotificationService(emailService);
+
+service.SendNotification("Email Message!");
+service.ScheduleNotification("Scheduled Email", DateTime.Now.AddMinutes(2), emailService);
+
+// Swap service easily
+NotificationService smsServiceWrapper = new NotificationService(new SMSService());
+smsServiceWrapper.SendNotification("SMS Message!");
+```
+Key Benefits
+- Flexible & Testable: Swap implementations without modifying NotificationService.
+- Supports multiple channels: Easily inject EmailService, SMSService, SlackService, etc.
+- Maintains SOLID principles: SRP, OCP, DIP, and LSP are preserved.
