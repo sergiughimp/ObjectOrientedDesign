@@ -1,0 +1,15 @@
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/bin/Debug/net8.0/Lect8
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/bin/Debug/net8.0/Lect8.deps.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/bin/Debug/net8.0/Lect8.runtimeconfig.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/bin/Debug/net8.0/Lect8.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/bin/Debug/net8.0/Lect8.pdb
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/obj/Debug/net8.0/Lect8.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/obj/Debug/net8.0/Lect8.AssemblyInfoInputs.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/obj/Debug/net8.0/Lect8.AssemblyInfo.cs
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/obj/Debug/net8.0/Lect8.csproj.CoreCompileInputs.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/obj/Debug/net8.0/Lect8.sourcelink.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/obj/Debug/net8.0/Lect8.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/obj/Debug/net8.0/refint/Lect8.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/obj/Debug/net8.0/Lect8.pdb
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/obj/Debug/net8.0/Lect8.genruntimeconfig.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week8/Lect8/obj/Debug/net8.0/ref/Lect8.dll
