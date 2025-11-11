@@ -1,0 +1,15 @@
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/bin/Debug/net8.0/observer_demo
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/bin/Debug/net8.0/observer_demo.deps.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/bin/Debug/net8.0/observer_demo.runtimeconfig.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/bin/Debug/net8.0/observer_demo.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/bin/Debug/net8.0/observer_demo.pdb
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/obj/Debug/net8.0/observer_demo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/obj/Debug/net8.0/observer_demo.AssemblyInfoInputs.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/obj/Debug/net8.0/observer_demo.AssemblyInfo.cs
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/obj/Debug/net8.0/observer_demo.csproj.CoreCompileInputs.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/obj/Debug/net8.0/observer_demo.sourcelink.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/obj/Debug/net8.0/observer_demo.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/obj/Debug/net8.0/refint/observer_demo.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/obj/Debug/net8.0/observer_demo.pdb
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/obj/Debug/net8.0/observer_demo.genruntimeconfig.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week9/observer_demo/obj/Debug/net8.0/ref/observer_demo.dll

@@ -1,0 +1,14 @@
+/Users/w.iqbal/Downloads/10.A.Code - Observer/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1
+/Users/w.iqbal/Downloads/10.A.Code - Observer/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.deps.json
+/Users/w.iqbal/Downloads/10.A.Code - Observer/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.runtimeconfig.json
+/Users/w.iqbal/Downloads/10.A.Code - Observer/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.dll
+/Users/w.iqbal/Downloads/10.A.Code - Observer/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.pdb
+/Users/w.iqbal/Downloads/10.A.Code - Observer/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/w.iqbal/Downloads/10.A.Code - Observer/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfoInputs.cache
+/Users/w.iqbal/Downloads/10.A.Code - Observer/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfo.cs
+/Users/w.iqbal/Downloads/10.A.Code - Observer/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.CoreCompileInputs.cache
+/Users/w.iqbal/Downloads/10.A.Code - Observer/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.dll
+/Users/w.iqbal/Downloads/10.A.Code - Observer/ConsoleApp1/obj/Debug/net8.0/refint/ConsoleApp1.dll
+/Users/w.iqbal/Downloads/10.A.Code - Observer/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.pdb
+/Users/w.iqbal/Downloads/10.A.Code - Observer/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.genruntimeconfig.cache
+/Users/w.iqbal/Downloads/10.A.Code - Observer/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll
