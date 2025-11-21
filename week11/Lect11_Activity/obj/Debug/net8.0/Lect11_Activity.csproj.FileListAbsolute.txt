@@ -1,0 +1,15 @@
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/bin/Debug/net8.0/Lect11_Activity
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/bin/Debug/net8.0/Lect11_Activity.deps.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/bin/Debug/net8.0/Lect11_Activity.runtimeconfig.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/bin/Debug/net8.0/Lect11_Activity.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/bin/Debug/net8.0/Lect11_Activity.pdb
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/obj/Debug/net8.0/Lect11_Activity.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/obj/Debug/net8.0/Lect11_Activity.AssemblyInfoInputs.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/obj/Debug/net8.0/Lect11_Activity.AssemblyInfo.cs
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/obj/Debug/net8.0/Lect11_Activity.csproj.CoreCompileInputs.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/obj/Debug/net8.0/Lect11_Activity.sourcelink.json
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/obj/Debug/net8.0/Lect11_Activity.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/obj/Debug/net8.0/refint/Lect11_Activity.dll
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/obj/Debug/net8.0/Lect11_Activity.pdb
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/obj/Debug/net8.0/Lect11_Activity.genruntimeconfig.cache
+/Users/sergiughimp/Desktop/GitHub_01_08_2025/ObjectOrientedDesign/week11/Lect11_Activity/obj/Debug/net8.0/ref/Lect11_Activity.dll
